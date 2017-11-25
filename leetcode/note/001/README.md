@@ -59,4 +59,4 @@ return [0, 1].
 
 时间复杂度O(n)，空间复杂度O(1)好了，不愧是最优解，很巧妙，值得琢磨。
 </br>类似利用hash table降低时间复杂度的例子还有很多，比如：
-2017-涂鸦工厂：<a href="http://">找最长不重复字串</a>
+2017-涂鸦工厂：<a href="http://https://github.com/simifun/java-leetcode/tree/master/leetcode/note/002">找最长不重复字串</a>
