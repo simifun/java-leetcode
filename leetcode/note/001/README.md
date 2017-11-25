@@ -1,3 +1,5 @@
+# [Two Sum](https://leetcode.com/problems/two-sum/description/)
+
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 Example:
@@ -39,7 +41,7 @@ return [0, 1].
 }
 </code></pre>
 
-时间复杂度O(n)，nice！空间复杂度O(n)，涨了，没办法，拿空间换时间是常见的，也是令人欣然接受的。但是这是最优解吗？有没有更优雅的方案？
+时间复杂度O(n)，nice！空间复杂度O(n)，涨了，没办法，拿空间换时间是常见的，但也是令人欣然接受的。那么这是最优解吗？有没有更优雅的方案？
 <br>答案是有，只需要将上述第二种方法做一下改进，边插入边比较:<br>
 
 <pre><code class="java">public int[] twoSum(int[] nums, int target) {
@@ -57,4 +59,4 @@ return [0, 1].
 
 时间复杂度O(n)，空间复杂度O(1)好了，不愧是最优解，很巧妙，值得琢磨。
 </br>类似利用hash table降低时间复杂度的例子还有很多，比如：
-2017-搜狐畅游笔试：<a href="http://">找最长不重复字串</a>
+2017-涂鸦工厂：<a href="http://">找最长不重复字串</a>
