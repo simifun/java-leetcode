@@ -26,7 +26,8 @@ return [0, 1].
 <br>
 代码如下:
 
-<pre><code class="java">public int[] twoSum(int[] nums, int target) {
+```java
+public int[] twoSum(int[] nums, int target) {
     Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;();
     for (int i = 0; i &lt; nums.length; i++) {
         map.put(nums[i], i);
@@ -39,7 +40,7 @@ return [0, 1].
     }
     throw new IllegalArgumentException("No two sum solution");
 }
-</code></pre>
+```
 
 时间复杂度O(n)，nice！空间复杂度O(n)，涨了，没办法，拿空间换时间是常见的，但也是令人欣然接受的。那么这是最优解吗？有没有更优雅的方案？
 <br>答案是有，只需要将上述第二种方法做一下改进，边插入边比较:<br>
