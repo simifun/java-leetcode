@@ -28,13 +28,13 @@ return [0, 1].
 
 ```java
 public int[] twoSum(int[] nums, int target) {
-    Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;();
-    for (int i = 0; i &lt; nums.length; i++) {
+    Map<Integer, Integer> map = new HashMap<>();
+    for (int i = 0; i < nums.length; i++) {
         map.put(nums[i], i);
     }
-    for (int i = 0; i &lt; nums.length; i++) {
+    for (int i = 0; i < nums.length; i++) {
         int complement = target - nums[i];
-        if (map.containsKey(complement) &amp;&amp; map.get(complement) != i) {
+        if (map.containsKey(complement) && map.get(complement) != i) {
             return new int[] { i, map.get(complement) };
         }
     }
