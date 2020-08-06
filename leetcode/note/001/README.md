@@ -6,7 +6,7 @@ Example:
 Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
-</br>简单来说就是给出两数的和target和一个int数组，求数组中是否有满足两数和等于target的，返回其下标。
+</br>简单来说就是给出一个目标数target和一个int数组，求数组中是否有满足两数和等于target的，返回其下标。
 题目很简单，解出来很容易，比如Brute Force解法，直接两个for循环嵌套就ok了。参考：
 
 ```java
